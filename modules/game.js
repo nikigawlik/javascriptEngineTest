@@ -27,7 +27,7 @@ export class Game {
     async start() {
         console.log("loading initial scene...");
         this.config = await loadDataFile("config");
-        this.scene = await loadDataFile("scenes/main");
+        this.scene = await loadDataFile(`scenes/${this.config.startScene}`);
         this.gameObjects = this.scene.objects || this.gameObjects;
 
         console.log("starting game systems...");
@@ -39,7 +39,7 @@ export class Game {
 
     async update() {
         for(let system of this.systems) {
-            let objects = this.gameObjects.filter(obj => system.objectIsValid(obj));
+            let objects = this.gameObjects.filter(obj => system.constructor.objectIsValid(obj));
             system.update(objects);
         }
         
@@ -62,4 +62,4 @@ export async function loadDataFile(path) {
     return await response.json();
 }
 
-export let game = new Game(5); // singleton instance of the game
+export let game = new Game(60); // singleton instance of the game

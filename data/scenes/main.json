@@ -3,12 +3,38 @@
         {
             "name": "circle0",
             "shape": "circle",
+            "sdf": "+ circ 0 1 1",
+            "radius": 3,
             "x": 0,
             "y": 0
         },
         {
             "name": "circle1",
             "shape": "circle",
+            "sdf": "+ circ 0 0 1",
+            "radius": 4,
+            "x": 1,
+            "y": 0.5
+        },
+        {
+            "name": "circle1",
+            "shape": "circle",
+            "sdf": "+ circ 0 0 1",
+            "x": 1,
+            "y": 0.5
+        },
+        {
+            "name": "circle1",
+            "shape": "circle",
+            "sdf": "+ circ 0 0 1",
+            "radius": 2,
+            "x": 1,
+            "y": 0.5
+        },
+        {
+            "name": "circle1",
+            "shape": "circle",
+            "sdf": "+ circ 0 0 1",
             "x": 1,
             "y": 0.5
         },
