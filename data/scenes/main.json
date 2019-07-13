@@ -1,0 +1,22 @@
+{
+    "objects": [
+        {
+            "name": "circle0",
+            "shape": "circle",
+            "x": 0,
+            "y": 0
+        },
+        {
+            "name": "circle1",
+            "shape": "circle",
+            "x": 1,
+            "y": 0.5
+        },
+        {
+            "name": "rect1",
+            "shape": "rect",
+            "x": 1,
+            "y": 0.5
+        }
+    ]
+}

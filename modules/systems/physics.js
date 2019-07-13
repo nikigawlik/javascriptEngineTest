@@ -5,8 +5,12 @@ export class Physics extends GameSystem {
         super();
     }
 
-    start() {
-        
+    static objectIsValid(object) {
+        return object.shape == "circle" && object.x != undefined && object.y != undefined;
+    }
+
+    start(objects) {
+
     }
 
     update(objects) {
